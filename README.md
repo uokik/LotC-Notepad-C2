@@ -16,4 +16,40 @@ The project consists of two components:
 Communication between the components is performed through encoded note content.
 
 ## Architecture
+![Architecture diagram](image/Untitled-2026-09-19-1822.png)
 
+## Build
+### Requirements:
+- Go
+- Make
+
+### Build both components:
+```
+make build
+```
+### Build windows agent:
+```
+make build-agent
+```
+### Build linux operator component:
+```
+make build-server
+```
+### Clean build artifacts:
+```
+make clean
+```
+
+## Protocol
+
+The protocol uses the following message formats:
+
+```text
+v91:<command>
+v92:<response>
+```
+
+## Disclaimer
+
+For educational and security research purposes only.
+Use only in authorized environments.
